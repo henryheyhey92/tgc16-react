@@ -145,9 +145,7 @@ class SurveyForm extends React.Component {
     // end updateformfield
 
     updateFruits = (e) => {
-
-
-        if (this.state.fruits.includes(e.target.value)) {
+             if (this.state.fruits.includes(e.target.value)) {
  
               // case 1: the value is already in the array
               let indexToRemove = this.state.fruits.findIndex((eachFruit)=>{
