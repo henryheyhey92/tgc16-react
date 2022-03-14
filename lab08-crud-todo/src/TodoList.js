@@ -161,6 +161,11 @@ class TodoList extends React.Component {
 
         return <React.Fragment>
             <h1>Todo List </h1>
+            <button onClick={()=>{
+                this.setState({
+                    'foobar': 1
+                })
+            }}/>
             <div>
                 <label>Name of Task:</label>
                 <input name="newTaskDescription" 
