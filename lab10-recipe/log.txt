@@ -1,0 +1,24 @@
+
+> lab10-recipe@0.1.0 start
+> react-scripts start
+
+Starting the development server...
+
+Compiled successfully!
+
+You can now view lab10-recipe in the browser.
+
+  Local:            http://localhost:3000
+  On Your Network:  http://10.0.2.100:3000
+
+Note that the development build is not optimized.
+To create a production build, use yarn build.
+
+assets by path static/js/*.js 2.25 MiB
+  asset static/js/bundle.js 2.24 MiB [emitted] (name: main) 1 related asset
+  asset static/js/node_modules_web-vitals_dist_web-vitals_js.chunk.js 6.93 KiB [emitted] 1 related asset
+asset index.html 1.67 KiB [emitted]
+asset asset-manifest.json 458 bytes [emitted]
+cached modules 2.11 MiB [cached] 126 modules
+runtime modules 31.4 KiB 15 modules
+webpack 5.70.0 compiled successfully in 957 ms
