@@ -7,6 +7,10 @@ export default class AddNew extends React.Component {
         'newIngredients': []
     }
 
+    componentDidMount() {
+        console.log("Greetings from AddNew")
+    }
+
     BASE_API_URL = "https://8888-kunxinchor-dwadrecipeapi-tbknv7p66bz.ws-us34.gitpod.io/"
 
     updateFormField = (evt) => {
