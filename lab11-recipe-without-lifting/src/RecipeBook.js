@@ -1,6 +1,7 @@
 import React from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import Listing from './Listing'
+import AddNew from './AddNew'
 
 export default class RecipeBook extends React.Component {
     state = {
@@ -13,9 +14,15 @@ export default class RecipeBook extends React.Component {
         })
     }
 
+    doneAddingRecipe = () => {
+        this.setActive('recipe')
+    }
+
     renderPage() {
         if (this.state.active === 'recipe') {
             return <Listing/>
+        } else if (this.state.active === 'add') {
+            return <AddNew doneAddingRecipe={this.doneAddingRecipe} />
         }
     }
 
