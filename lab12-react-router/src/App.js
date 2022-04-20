@@ -1,12 +1,14 @@
-import logo from './logo.svg';
 import './App.css';
 import Home from './pages/Home';
 import About from './pages/About';
-import ContactUs from './pages/Contact';
+import Contact from './pages/Contact';
+import SubmittedForm from './pages/SubmittedForm';
+
 
 import {
   BrowserRouter as Router,
   Switch,
+  Routes,
   Route,
   Link
 } from 'react-router-dom';
@@ -21,19 +23,20 @@ function App() {
             <Link to="/">Home</Link>
           </li>
           <li>
-            <Link to="/">About</Link>
+            <Link to="/about">About</Link>
           </li>
           <li>
-            <Link to="/">Contact</Link>
+            <Link to="/contact">Contact</Link>
           </li>
         </ul>
       </nav>
-<Routes>
-  <Route path="/" element={<Home/>} />
-  <Route path="/about" element={<About/>} />
-  <Route path="/contact" element={<Contact/>} />
-  <Route path="/submitted-form" element/>
-</Routes>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/form-submitted" element={<SubmittedForm />} />
+        {/* <Route path="/posts/:post_id" element={<PostPage />} /> */}
+      </Routes>
 
     </Router>
   );
