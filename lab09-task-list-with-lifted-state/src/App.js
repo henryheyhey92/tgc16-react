@@ -46,6 +46,7 @@ class App extends React.Component {
   }
 
   editTask = (task) => {
+    console.log(task);
     this.setState({
       'taskBeingEdited': task,
       'modifiedTaskDescription': task.description
