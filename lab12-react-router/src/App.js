@@ -12,6 +12,7 @@ import {
   Route,
   Link
 } from 'react-router-dom';
+import PostPage from './pages/PostPage';
 
 function App() {
   return (
@@ -28,6 +29,9 @@ function App() {
           <li>
             <Link to="/contact">Contact</Link>
           </li>
+          <li>
+            <Link to="/posts">Posts</Link>
+          </li>
         </ul>
       </nav>
       <Routes>
@@ -36,6 +40,7 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/form-submitted" element={<SubmittedForm />} />
         {/* <Route path="/posts/:post_id" element={<PostPage />} /> */}
+        <Route path="/posts" element={<PostPage/>} />
       </Routes>
 
     </Router>
